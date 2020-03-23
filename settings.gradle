@@ -1,0 +1,2 @@
+rootProject.name='Lapi-Monini-Politano'
+include ':app'
