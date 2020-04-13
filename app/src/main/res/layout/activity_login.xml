@@ -10,30 +10,8 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/nome"
-        android:layout_marginTop="10dp">
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/text_nome" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/cognome"
-        android:layout_marginTop="10dp">
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/text_cognome"/>
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:hint="@string/email"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="30dp">
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -43,7 +21,8 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/password">
+        android:hint="@string/password"
+        android:layout_marginTop="20dp">
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -53,11 +32,41 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:id="@+id/btn_login"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Effettua il login con"
+        android:layout_gravity="center"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Se non hai ancora un account registrati"
+        android:layout_gravity="center"
+        android:textAlignment="center"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="@string/registra"
         android:id="@+id/btn_registra"
         android:layout_marginTop="20dp"
-        android:layout_gravity="end"
+        android:layout_gravity="center"
         android:background="@color/colorAccent"
         android:textColor="@android:color/white"/>
+
+
 
 </LinearLayout>
